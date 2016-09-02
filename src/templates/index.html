@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Title</title>
+    <script src="http://code.angularjs.org/1.0.7/angular.min.js"></script>
+</head>
+<body>
+<div ng-controller="myCtrl">
+    <form name="answerForm">
+        <label for="input">Input id</label>
+        <input type="text" id="input" name="id"/>
+        <input type="button" value="Submit" ng-click="serv()"/>
+    </form>
+    <a>{{resp}}</a>
+    <a>{{answerController().response}}</a>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
